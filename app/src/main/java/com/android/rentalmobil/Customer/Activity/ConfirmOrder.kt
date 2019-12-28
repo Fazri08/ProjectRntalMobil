@@ -17,7 +17,8 @@ class ConfirmOrder : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_confirm_order)
 
-        val totalPrice = intent.getStringExtra(Constant.KEY_TOTAL_CHART)
+        val totalquantity =intent.getStringExtra("totalquantity")
+        val totalharga =intent.getStringExtra("totalharga")
 
         btn_confirm_order.setOnClickListener {
             val nama = et_nama.text.toString()
@@ -35,7 +36,7 @@ class ConfirmOrder : AppCompatActivity() {
             hashMap["name"] = nama
             hashMap["no_telp"] = no_telp
             hashMap["alamat"] = alamat
-            hashMap["total"] = totalPrice
+            hashMap["total"] = totalharga
 
             databaseOrder.setValue(hashMap).addOnCompleteListener {
 
