@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Rental Mobil"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary">
+    </androidx.appcompat.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="40dp"
+        android:id="@+id/img_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_below="@+id/img_profile"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:text="Username"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/customer"
+        android:layout_width="wrap_content"
+        android:text="CUSTOMER"
+        android:layout_centerInParent="true"
+        android:textSize="25dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+
+        <LinearLayout
+            android:id="@+id/bg_transaksi"
+            android:padding="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#479bda"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/z"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order Id "
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/cardview_light_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/cardview_light_background"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/orderid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order Id"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/cardview_light_background"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/sd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name "
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/cardview_light_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/cardview_light_background"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/cardview_light_background"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/s"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No Telp "
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/cardview_light_background"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/cardview_light_background"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/no_telp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No Telp"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/cardview_light_background"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/cardview_light_background"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/cardview_light_background"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/cardview_light_background"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="#bebebe"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/total_transaksi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/cardview_light_background"
+                    />
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="total"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/cardview_light_background" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="200dp"
+                    android:id="@+id/lihatpesanan"
+                    android:text="Lihat pesanan"
+                    android:background="@drawable/round"
+                    android:textColor="#fff"
+                    android:layout_height="50dp"/>
+
+</LinearLayout>

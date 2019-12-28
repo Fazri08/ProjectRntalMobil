@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16sp">
+
+            <ImageView
+                android:id="@+id/img_product"
+                android:layout_width="match_parent"
+                android:layout_height="190sp"
+                android:background="#fff"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_below="@+id/img_product"
+                android:id="@+id/carName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Mobil"
+                android:layout_marginRight="50dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:layout_marginBottom="10sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:layout_alignParentEnd="true" />
+
+            <LinearLayout
+                android:layout_below="@+id/carName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/description">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8sp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ic_year"
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:layout_marginRight="10sp" />
+
+                        <TextView
+                            android:id="@+id/year"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2017"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8sp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ic_capacity"
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:layout_marginRight="10sp" />
+
+                        <TextView
+                            android:id="@+id/capacity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="8"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.8dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8sp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ic_color"
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:layout_marginRight="10sp" />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="White"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8sp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ic_bensin"
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:layout_marginRight="10sp" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Premium"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10sp"
+                android:layout_below="@+id/description"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_pesan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round"
+                    android:text="PESAN"
+                    android:textColor="#fff"
+                    android:textSize="30sp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

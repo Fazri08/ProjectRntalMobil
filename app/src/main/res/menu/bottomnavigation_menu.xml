@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bookcar"
+        android:title="Car"
+        android:icon="@drawable/ic_action_name"/>
+
+    <item
+        android:id="@+id/cart"
+        android:title="Cart"
+        android:icon="@drawable/ic_shopping"/>
+
+    <item
+        android:id="@+id/account_menu"
+        android:title="Profile"
+        android:icon="@drawable/iconprofile"/>
+
+</menu>
